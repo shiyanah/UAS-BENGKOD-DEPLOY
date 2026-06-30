@@ -1,14 +1,16 @@
 import streamlit as st
-
-st.set_page_config(
-    page_title="Customer Churn Prediction",
-    layout="centered"
-)
-
 import pandas as pd
 import numpy as np
 import joblib
 from datetime import datetime
+
+# ==========================================
+# 0. KONFIGURASI HALAMAN UTAMA (Hanya boleh 1 kali & paling atas)
+# ==========================================
+st.set_page_config(
+    page_title="Customer Churn Prediction",
+    layout="centered"
+)
 
 # ==========================================
 # 1. LOAD SAVED OBJECTS
@@ -30,7 +32,6 @@ except Exception as e:
 # ==========================================
 # 2. SIDEBAR & HALAMAN UTAMA
 # ==========================================
-st.set_page_config(page_title="Customer Churn Prediction", layout="centered")
 
 # Custom CSS untuk mempercantik tampilan tanpa gambar/emoji
 st.markdown("""
